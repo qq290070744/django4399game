@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>python学院小游戏平台</title>
+  <style type="text/css">
+  *{margin:0;padding:0;}
+	.box{width:1000px;
+		height:100%;
+		margin:130px auto;
+		}
+	.box ul{width:900px;
+			height:800px;
+			margin:0px auto;}
+	.box ul li{width:72px;
+				height:72px;
+				float:left;
+				list-style-type:none;
+				padding-left:15px;
+				padding-bottom:60px;
+				}
+	.header ul li a{font-size:26px;
+				line-height:72px;}
+	.header{width:1000px;
+			height:100px;
+			margin:0px auto;
+			background:#ccffcc;}
+.header ul{width:900px;
+			height:800px;
+			margin:0px auto;}
+	.header ul li{float:left;padding-left:10px;list-style-type:none;padding-left:100px;}
+	.box .text{width:550px;
+		height:110px;
+		
+		position:absolute;
+		top:110px;
+		left:700px;
+		font-size:40px;
+		
+		
+	}
+  </style>
+ </head>
+ <body>
+	<div class="header">
+		<ul>
+			<li><a href="index.html">首页</a></li>
+			<li><a href="https://www.taobao.com/" target="_black">电商平台</a></li>
+
+			<li><a href="https://www.baidu.com/" target="_black">搜索引擎</a></li>
+			<li><a href="http://www.51cto.com/" target="_black">python论坛</a></li>
+
+		</ul>
+	</div>
+	<div class="box">
+		<ul>
+            {% for i in xy %}
+			<li><a href="{{ i.flashurl }}"><span class="new"></span><img alt="{{ i.flashurl }}" src="{{ i.imgurl }}" /><a href="{{ i.flashurl }}" target="_blank">{{ i.name }}</a></a></li>
+
+
+
+            {% endfor %}
+		</ul>
+		<div class="text">
+
+	</div>
+	</div>
+	
+ </body>
+</html>
